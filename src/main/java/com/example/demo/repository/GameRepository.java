@@ -1,7 +1,7 @@
-package com.example.demo.service;
+package com.example.demo.repository;
 
 import com.example.demo.entity.Game;
 
-public interface GameService {
+public interface GameRepository {
     Game createGame(Game game);
 }

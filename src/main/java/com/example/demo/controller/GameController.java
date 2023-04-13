@@ -19,9 +19,8 @@ public class GameController {
     private final GameMapper gameMapper;
 
     @PostMapping
-    public Game createGame(@RequestBody GameDto gameDto){
-        gameService.createGame(gameMapper.toGame(gameDto));
-        return new Game();
+    public Game createGame(@RequestBody GameDto gameDto) {
+        return gameService.createGame(gameMapper.toGame(gameDto));
     }
 
 }
